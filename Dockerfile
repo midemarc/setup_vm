@@ -9,6 +9,7 @@ RUN yum install -y make \
 && rm -rf /var/cache
 
 COPY Makefile node.sh ./
+RUN mkdir build
 ENV HOME /root
 
 # Node-specific variables, normally set in .bashrc

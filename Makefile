@@ -1,7 +1,8 @@
-install: node
+install: build/node
 
-node: node.sh
+build/node: node.sh
 	./node.sh
+	touch build/node
 
 docker: Dockerfile
 	docker build . -t setup
