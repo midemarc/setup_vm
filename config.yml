@@ -4,3 +4,7 @@ commandTests:
     command: "node"
     args: ["-v"]
     expectedOutput: ["v14"]
+  - name: "Git v2 installed"
+    command: "git"
+    args: ["--version"]
+    expectedOutput: ["git version 2"]
