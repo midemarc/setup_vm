@@ -1,0 +1,6 @@
+schemaVersion: 2.0.0
+commandTests:
+  - name: "Node v14"
+    command: "node"
+    args: ["-v"]
+    expectedOutput: ["v14"]
